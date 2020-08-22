@@ -1,0 +1,164 @@
+body{
+	margin-bottom: 200px;
+}
+
+.heading{
+	padding: 20px 20px 0px 20px;
+	font-size: 50px;	
+	font-family: "Courier";
+}
+
+.sub-head,.count-div{
+	padding: 15px 5px 15px 5px; 
+	font-size: 30px;
+	font-family: "Courier";
+}
+
+.club-add,.club-del{
+	width:40%;
+}
+
+.count-div{
+	font-size: 20px;
+}
+
+.foot{
+	position: fixed;
+	bottom:0;
+	border-top:1.5px solid red;
+	background-color: white;
+	text-align: center;
+}
+
+.foot-content{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.card{
+	width:100%;
+}
+
+.card-body{
+	font-size: 20px;
+}
+
+#addForm{
+	margin-top: 20px;
+	font-family:"Courier";
+	font-size: 20px;
+	width:80%;
+	border-radius: 25px;
+	border:2px solid black;
+	border-color: red;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.add-form{
+	padding-left: 15px;
+}
+
+input{
+	border:none;
+	border-bottom:1px solid black;
+	outline:none;
+	font-size: 20px;
+}
+
+.fp{
+	font-size: 10px;
+}
+
+.form-inp{
+	width:60%;
+}
+
+.output{
+	font-weight: bold;
+	font-size:15px;
+}
+
+@media only screen and (min-width: 768px){
+	#addForm{
+		position: absolute;
+	}
+
+	.add-form{
+		padding-left: 20px;
+	}
+
+	.heading{
+		font-size: 50px;	
+	}
+
+	.club-add,.club-del{
+		margin-top: 15px;
+		padding-left:7.5px;
+		width:100%;
+	}
+
+	.sub-head{
+		font-size: 30px;
+	}
+
+	.count-div{
+		font-size: 20px;
+	}
+	.club{
+		padding: 10px 0px 10px 0px;
+	}
+	.card{
+		position:absolute;
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	.heading{
+		padding: 0px;
+		font-size: 60px;	
+		margin:40px 0px 0px 0px;
+	}
+
+	.sub-head{
+		padding: 0px;
+		font-size: 30px;
+	}
+
+	.count-div{
+		padding: 0px;
+		font-size: 20px;
+		padding-bottom:30px;
+	}
+
+	.club{
+		padding: 10px 0px 10px 0px;
+	}
+
+	.club-add,.club-del{
+		margin-top: 20px;
+		width:100%;
+	}
+
+	.card{
+		position:absolute;
+		width:100%;
+	}
+
+	.card-body{
+		font-size: 20px;
+	}
+	
+	#addForm{
+		position:absolute;
+		margin-bottom:400px; 
+	}
+	
+	.add-form{
+		padding-left: 22.5%;
+	}
+
+	.form-inp{
+		width:100%;
+	}
+}

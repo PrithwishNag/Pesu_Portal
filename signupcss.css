@@ -1,0 +1,114 @@
+body{
+	margin-bottom: 100px; 
+}
+
+.HeadDetailsBtns{
+	margin:20px 0px 10px 0px;
+	width: 85%;
+}
+
+.inner{
+	margin-left:20px;
+	font-style: italic;
+}
+
+.des{
+	margin-left:20px;
+}
+
+.heading{
+	font-size: 50px;	
+	font-family: "Courier";
+	text-align: center;
+}
+
+.sub-head{
+	font-size: 30px;
+	font-family: "Courier";
+}
+
+.foot{
+	position: fixed;
+	bottom:0;
+	border-top:1.5px solid red;
+	text-align: center;
+	background-color: white;
+}
+
+.foot-content{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+input{
+	text-decoration-style: none;
+	border:none;
+	border-bottom:1px solid black;
+	outline:none;
+	font-size: 20px;
+}
+
+.signup-form{
+	margin-top: 20px;
+	font-family:"Courier";
+	font-size: 20px;
+	width:80%;
+	border-radius: 25px;
+	border:2px solid black;
+	border-color: red;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.fp{
+	font-size: 10px;
+}
+
+.form-inp{
+	width:60%;
+}
+
+.signup{
+	font-size:15px;
+}
+
+.signup:hover{
+	text-decoration:none; 
+}
+
+#incorrect{
+	padding:10px 10px 10px 10px;
+	font-size: 15px;
+}
+
+@media only screen and (min-width: 1000px){
+
+.HeadDetailsBtns{
+	width:70%;
+}
+
+.heading{
+	font-size: 50px;	
+	font-family: "Courier";
+}
+
+.des{
+	margin-left: 0px;
+}
+
+.signup-form{
+	font-size: 25px;
+	width:35%;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.fp{
+	font-size: 15px;
+}
+
+.form-inp{
+	width:60%;
+}
+
+}

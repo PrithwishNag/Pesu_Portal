@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="TimeLinecss.css">
+
+    <title>Timeline</title>
+  </head>
+  <body>
+    <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">PES UNIVERSITY</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    
+    <div class="container" style="padding: 0px;text-align: center">
+     <div class="row heading" style="display: inline-block;">
+      <div class="col-md-12">
+         <span class="Club-Name-Header text-danger">Club 1</span> - TIMELINE
+      </div>
+     </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <button onmouseover="show(0)" onmouseout="dontShow(0)" onclick="dontShow(0)" class="btn btn-outline-danger btn-lg btn-block">Past Events</button><br>
+          <div class="info text-danger" style="font-family:'Courier'; padding: 10px 0px 10px 0px;  "><i>Awards And Achievements Of This Club</i></div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <button class="btn btn-outline-danger btn-lg btn-block" onclick="doubleShow(1)" >Ongoing Events</button>
+          <div class="col-md-12" style="padding-top: 10px">
+          <ul style="list-style-type: none" class="info">
+            <li ><button class="btn btn-outline-danger btn-lg btn-block" onclick="dontShow(1); show(3); dontShow(2)">Volunteer Details</button></li>
+            <li ><button class="btn btn-outline-danger btn-lg btn-block" onclick="dontShow(1); show(2); dontShow(3)">Bills</button></li>
+            <li ><button class="btn btn-outline-danger btn-lg btn-block" onclick="dontShow(1);">Sponser</button></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Tables-->
+      <!--Bills-->
+    <div class="container Bills info">
+      <div class="row">
+        <div class="card" style="width: 100%">
+          <div class="card-header bg-danger" style="font-family: 'Courier';font-weight: bold;">
+            <span id="Table-Header" style=" font-size:30px; color:white">BILLS</span>
+          </div>
+          <div class="card-body table-responsive" style="padding: 0px;">
+            <table id="Table-Details" class="table">
+              <thread> 
+                <tr class="Head-Row">
+                  <th scope="col">Sr no.</th>
+                  <th scope="col">SRN</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">CGPA</th>
+                  <th scope="col">Program</th>
+                  <th scope="col">Sem</th>
+                  <th scope="col">Section</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Attendance</th>
+                </tr>
+              </thread>
+              <tbody>
+                <tr>
+                  <th scope="row">1.</th>
+                  <td>PES1201800405</td>
+                  <td>Prithwish</td>
+                  <td>9.07</td>
+                  <td>B.Tech</td>
+                  <td>4</td>
+                  <td>I</td>
+                  <td>prithwish.nag@gmail.com</td>
+                  <td>100%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Volunteer-->
+    <div class="container VDetails info">
+      <div class="row">
+        <div class="card" style="width: 100%">
+          <div class="card-header bg-danger" style="font-family: 'Courier';font-weight: bold">
+            <span id="Table-Header" style=" font-size:30px; color:white">VOLUNTEER DETAILS</span>
+          </div>
+          <div class="card-body table-responsive" style="padding: 0px">
+            <table id="Table-Details" class="table">
+              <thread> 
+                <tr class="Head-Row">
+                  <th scope="col">Sr no.</th>
+                  <th scope="col">SRN</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">CGPA</th>
+                  <th scope="col">Program</th>
+                  <th scope="col">Sem</th>
+                  <th scope="col">Section</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Attendance</th>
+                </tr>
+              </thread>
+              <tbody>
+                <tr>
+                  <th scope="row">1.</th>
+                  <td>PES1201800405</td>
+                  <td>Prithwish</td>
+                  <td>9.07</td>
+                  <td>B.Tech</td>
+                  <td>4</td>
+                  <td>I</td>
+                  <td>prithwish.nag@gmail.com</td>
+                  <td>100%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid foot">
+     <div class="foot-content">
+       <a href="#" class="badge badge-danger">@PESU</a>
+     </div>
+    </div>
+
+    <script type="text/javaScript" src="TimeLinejs.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

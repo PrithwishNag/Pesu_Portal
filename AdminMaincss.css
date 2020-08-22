@@ -1,0 +1,174 @@
+body{
+	margin-bottom: 150px;
+}
+
+.foot{
+	position: fixed;
+	bottom:0;
+	border-top:1.5px solid red;
+	background-color: white;
+	text-align: center;
+}
+
+.foot-content{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.at{
+	font-family: 'courier';
+	font-size:20px;
+	text-align: center;
+	border: 1px solid black;
+	padding: 10px 0px 10px 0px;
+}
+
+.card-header{
+	font-family: 'courier';
+	font-size: 20px; 
+}
+
+.Board{
+		font-family: 'courier';
+		font-size: 30px;
+		padding-bottom: 10px; 
+	}
+
+.mc,.set,.head{
+	padding: 10px 0px 50px 20px;
+	color:white;
+	font-family: 'courier';
+	font-size: 40px; 
+}
+
+.head{
+	margin-top: 40px;
+}
+
+.mc,.set{
+	padding-bottom: 20px; 
+	text-decoration: none;
+	font-size:25px;
+}
+
+.mc:hover,.set:hover{
+	color:white;
+	text-decoration: none;
+}
+
+.logout{
+	background-color: transparent;
+	color: white;
+	border-color: transparent;
+	font-family: 'courier';
+	padding: 0px;
+	font-size:25px;
+}
+
+.logout:hover{
+	text-decoration: none;
+	color:white;
+}
+
+.logout-div{
+	padding:10px 0px 30px 20px; 
+}
+
+.Board{
+	font-size: 50px;
+	padding: 20px;
+	margin-top:50px;
+}
+
+#DP{
+	border:5px solid black;
+	border-radius:50px;
+	width: 150px;
+	height: 150px;
+}
+
+#Admin-Name{
+	padding: 10px 0px 10px 10px;
+}
+
+.sidenav{
+		height:675px;
+		width:100%;
+		top:100;
+		left: 0;
+		padding-top:20px  
+	}
+
+@media only screen and (min-width: 768px){
+	.sidenav{
+		height:925px;
+		width:150px;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		bottom:55.5px;
+		padding-top:20px  
+	}
+
+	.mc,.set,.head{
+		padding: 10px 0px 50% 20px;
+	}
+
+	.head{
+		font-size: 20px;
+	}
+
+	.mc,.set,.logout{
+		font-size: 15px;
+	}
+
+	.space{
+		display:flex;
+	}
+
+	#DP{
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	.card-header{
+		font-size: 30px; 
+	}
+
+	.sidenav{
+		height:650px;
+		width:300px;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		bottom:55.5px;
+		padding-top:20px  
+	}
+
+	.mc,.set,.head{
+		padding: 10px 0px 25% 20px;
+	}
+
+	.Board{
+		font-family: 'courier';
+		font-size: 60px;
+		padding-bottom: 20px;
+		padding-top: 20px;  
+	}
+
+	.head{
+		margin-top:20px; 
+		font-size: 30px;
+	}
+
+	.mc,.set,.logout{
+		font-size: 25px;
+	}
+
+	#DP{
+		width: 150px;
+		height: 150px;
+	}
+}

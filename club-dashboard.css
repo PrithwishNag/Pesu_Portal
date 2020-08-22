@@ -1,0 +1,109 @@
+body {
+    padding-top: 65px;
+}
+.open-slide
+{
+ margin-right: 25px;
+
+}
+.side-menu{
+  height:100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#43BFC7;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+
+}
+.side-menu a{
+ padding: 20px 25px 10px 20px;
+ text-decoration: none;
+ font-size: 18px;
+ font-family: "Courier";
+ color: #fff;
+ display: block;
+ transition 0.5s;
+
+}
+.side-menu a:hover{
+  color:#6D7B8D;
+}
+.side-menu .close-btn{
+
+  align:right;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:180px;
+
+}
+#main{
+  transition:margin-left 0.5s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+@media(max-width:568px)
+{
+  .navbar-nav {display:none}
+}
+#number{
+  color:#009879;
+}
+.memdets{
+  display:none;
+}
+.member-database {
+  border-collapse: collapse;
+  margin: 25px 50px;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display:none;
+
+
+}
+.table-caption{
+  font-family: "Courier",sans-serif;
+  font-weight: bold;
+  margin-left:300px;
+}
+
+.member-database thead tr {
+  background-color: #009879;
+  color: #000000;
+  text-align: left;
+  font-family: "Courier",sans-serif;
+  font-weight: bold;
+  margin-left: 0px;
+}
+
+.member-database th,
+.member-database td {
+  padding: 10px 15px;
+}
+
+.member-database tbody tr{
+  border-bottom: 1px solid #dddddd;
+  font-family: "Courier",sans-serif;
+}
+
+.member-database tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+
+.member-database tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.member-database tbody tr:hover {
+  font-weight: bold;
+  color: #009879;
+}

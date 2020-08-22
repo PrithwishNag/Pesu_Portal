@@ -1,0 +1,70 @@
+.heading{
+	padding: 20px 20px 0px 20PX;
+	font-size: 30px;	
+	font-family: "Courier";
+}
+
+.sub-head{
+	padding: 30px;
+	font-size: 20px;
+	font-family: "Courier";
+}
+
+.foot{
+	position: fixed;
+	bottom:0;
+	border-top:1.5px solid red;
+	background-color: white;
+	text-align: center;
+}
+
+.foot-content{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.pc-but{
+	display:none;
+}
+
+.but{
+	margin:0px 20px 20px 20px;
+}
+
+a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 768px){
+	.heading{
+		font-size: 50px;	
+	}
+
+	.sub-head{
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	.heading{
+		font-size: 60px;	
+		margin:40px 0px 40px 0px;
+	}
+
+	.sub-head{
+		font-size: 40px;
+		margin-left:35%;
+		margin-bottom: 20px;
+	}
+
+	.mobile-but{
+		display: none;
+	}
+	.pc-but{
+		display:flex;
+	}
+	.pc-but-inner{
+		font-size: 25px;
+	}
+}
